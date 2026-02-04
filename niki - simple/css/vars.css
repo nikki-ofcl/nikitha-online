@@ -1,0 +1,164 @@
+:root {
+    /*------ LOADING SCREEN ------*/
+    --Loading-Screen-BG:#fcfcfc;
+    --Loading-Font-Size:3rem;
+    --Loading-Color:#2c2d31;
+    --Loading-First-Fade-Delay:0.25s;
+    --Loading-Letter-Ani-Speed:0.35s;
+    --Loading-Letter-Ani-Delay:0.08s;
+    --Loading-Dots-Bounce-Reset:1.5s;
+    --Loading-Dots-Bounce-Delay:0.08s;
+    --Loading-Screen-Estimated-Removal:1.15s;
+    --Loaded-Fill-Speed:0.3s;
+    --Loading-Letter-Leave-Speed:0.5s;
+    --Loading-Letter-Leave-Delay:0.04s;
+    --Loading-Screen-FadeOut:0.6s;
+
+    /*------ GENERAL ------*/
+    --Cursor:#1a1d38;
+
+    --Screen-Frame-Size:6rem;
+    --Screen-Frame-Color:#fff;
+
+    --H1-Size:1rem;
+    --H1-Color:#2c2d31;
+
+    --H2-Size:1.25rem;
+    --H2-Color:#2c2d31;
+
+    --Background:#fff;
+    --Body-Font-Size:0.9rem;
+    --Body-Text-Color:#333;
+    --Body-LineHeight:1.6;
+
+    /*------ MOBILE NAV ------*/
+    --Mobile-Menu-Rect-Size:1.2rem;
+    --Mobile-Menu-Lines-Color:#2c2d31;
+    --Mobile-Menu-Animation-1-Speed:0.3s;
+    --Mobile-Menu-Animation-2-Speed:0.3s;
+    --Mobile-Nav-List-Animation-Speed:0.6s;
+    --Mobile-Nav-List-Opacity-Speed:0.6s;
+
+    /*------ NAV ------*/
+    --Nav-Font-Size:0.75rem;
+    --Nav-Color:#2c2d31;
+    --Nav-Links-Spacing:1.420rem;
+
+    --Light-Dark-Mode-Icon-Size:1.15rem;
+    --Light-Dark-Mode-Switch-Speed:0.5s;
+
+    /*------ HEADER ------*/
+    --Header-PFP-Size:18%;
+    --Header-Gutter-Size:2rem;
+    --Header-Title-Size:1.5rem;
+    --Header-Title-Color:#252525;
+    --Header-Desc-LineHeight:1.75;
+
+    --Header-Scroll-Font-Size:0.7rem;
+    --Header-Scroll-Line-Gap:0.69rem;
+    --Header-Scroll-Line-Size:2.25rem;
+    --Header-Scroll-Line-Color:#444;
+    --Header-Scroll-Line-Speed:1.1s;
+    --Header-Scroll-Line-Delay:0.5s;
+
+    --Copyright-Edge-Offset:1.5rem;
+    --Copyright-Font-Size:0.75rem;
+    --Copyright-Text-Color:#888;
+
+    /*------ SECTIONS ------*/
+    --Section-Inner-Gaps:2.5rem;
+
+    /*------ SECTION: PROJECTS ------*/
+    --Project-Width:65vw;
+    --Project-Height:calc(var(--Project-Width) * 9 / 16);
+    --Project-Corner-Rounding:1.5rem;
+    --Project-Border:#eef2f7;
+    --Project-Swipe-Speed:1s;
+    --Project-Overlay-Color:rgba(255,255,255,0.8);
+    --Project-Overlay-Color-Cert: azure;
+    --Project-Overlay-Hover-Speed:0.5s;
+    --Project-Overlay-Blur:6px;
+    --Project-Overlay-Items-Spacing:1.5rem;
+
+    --Project-Name-Size:calc(var(--Project-Width) * 0.03); /* 3.5rem */
+    --Project-Desc-Width:45%;
+    --Project-Desc-LineHeight:1.85;
+
+    --Project-Tags-Padding-X:0.8rem;
+    --Project-Tags-Padding-Y:0.6rem;
+    --Project-Tags-Size:0.6rem;
+    --Project-Tags-Border:#eef2f7; /* dfe5ed */
+    --Project-Tags-BG:rgba(255,255,255,0.9);
+    --Project-Tags-Corner-Rounding:0.25rem;
+    --Project-Tags-Spacing:0.69rem;
+
+    --Project-Eye-Size:2.5rem;
+    --Project-Eye-Color:#333;
+    --Project-Eye-Pupil-Color:#fafafa;
+
+    --Project-Arrow-Diamond-Size:2.5rem;
+    --Project-Arrow-Diamond-Outline:var(--Project-Border); /* ececec */
+    --Project-Arrow-Size:1.25rem;
+
+    /*------ SECTION: SKILLS ------*/
+    --Circular-Graph-Size:3.69rem;
+    --Circular-Graph-Fill:#222;
+    --Circular-Graph-Empty:#eee;
+    --Circular-Graph-Cover:#fff;
+    --Circular-Graph-Line-Thickness:3px;
+
+    --Skills-Excerpt-LineHeight:2.0;
+    --Skills-Excerpt-Gap-Right:5rem;
+
+    --Skills-Column-Count:2;
+    --Skills-Grid-Spacing:2rem;
+    
+    --Skill-Gutter:1rem;
+    --Skill-Name-Font-Size:0.9rem;
+    --Skill-Years-Color:#818a9e;
+
+    /*------ SECTION: CONTACT ------*/
+    --Email-Icon-Size:1.25rem;
+    --Email-Font-Size:1rem;
+    --Email-Underline:#e4ddd4;
+
+    /*------ FOOTER ------*/
+    --Footer-Top-Border:#eef2f7;
+    --Footer-BG:#f8f9fb;
+    --Footer-Padding-X:2rem;
+    --Footer-Padding-Y:3.5rem; /* 2rem */
+
+    --Footer-Diamond-Size:2.8rem;
+    --Footer-Diamond-Border:#eef2f7;
+    --Footer-Diamond-BG:#fff;
+    --Footer-Links-Icon-Size:1.15rem;
+    --Footer-Links-Icon-Color:#2c2d31;
+    --Footer-Links-Spacing:-1px;
+
+    --Footer-Font-Size:0.75rem;
+    --Footer-Text-Color:#7b808d;
+
+    /*------ TOOLTIPS ------*/
+    --Tooltip-Font-Size:0.7rem;
+    --Tooltip-BG:#2c2d31;
+    --Tooltip-Text-Color:#e3e2e5;    
+
+    /*------ POPUP: CREDITS ------*/
+    --Popup-Width:55vw;
+    --Popup-Corner-Rounding:0.5rem;
+    --Popup-Padding:2rem;
+    --Popup-Border:#eef2f7;
+    --Popup-BG:#fff;
+
+    --Popup-Font-Size:var(--Body-Font-Size);
+    --Popup-LineHeight:1.85;
+    --Popup-Bullet-Size:calc(var(--Popup-Font-Size) * 1.25);
+    --Popup-Bullet-Gap:0.5rem;
+    --Popup-Links-Underline:#e4ddd4;
+    --Popup-Links-Hover:#948e89;
+
+    --Popup-Close-Diamond-Size:2rem;
+    --Popup-Close-Diamond-Border:#eef2f7;
+    --Popup-Close-Diamond-BG:#fff;
+    --Popup-Close-Icon-Size:1rem;
+}

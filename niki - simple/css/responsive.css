@@ -1,0 +1,192 @@
+@media(max-width: 1100px){
+    :root {
+        --Header-PFP-Size:22%;
+        --H1-Size:1.05rem;
+    }
+
+    .skills-flex {
+        grid-template-columns:30% auto;
+    }
+}
+
+@media(max-width: 1000px){
+    :root {
+        --Header-PFP-Size:30%;
+    }
+}
+
+@media(max-width: 900px){
+    :root {
+        --Project-Desc-Width:69%;
+        --Project-Overlay-Items-Spacing:1.2rem;
+        --Project-Eye-Size:2rem;
+        --H1-Size:1rem;
+    }
+
+    .project-desc {
+        font-size:calc(var(--Body-Font-Size) * 0.95)
+    }
+
+    .project-desc .long {
+        display:none;
+    }
+
+    .project-desc .short {
+        display:block;
+    }
+
+    .project-tags {
+        display:none;
+    }
+
+    .project-eye-wrap-outer {
+        margin-bottom:calc(0px - (var(--Project-Eye-Size) / 2))
+    }
+
+    .skills-flex {
+        grid-template-columns:1fr;
+        grid-gap:var(--Section-Inner-Gaps) 0
+    }
+}
+
+@media(max-width: 768px){
+    :root {
+        --Screen-Frame-Size:5rem;
+        --Body-Font-Size:0.875rem;
+        --Header-PFP-Size:33%;
+        --Header-Gutter-Size:3rem;
+        --Header-Title-Size:1.420rem;
+
+        --Project-Width:calc(100vw - (var(--Screen-Frame-Size) * 2) - 2.5vw);
+        --Project-Corner-Rounding:0.9rem;
+
+        --Project-Overlay-Items-Spacing:0.9rem;
+        --Project-Eye-Size:2rem;
+
+        --H2-Size:1.2rem;
+    }
+
+    .header-bg {
+        display:flex;
+        flex-direction:column;
+        gap:var(--Header-Gutter-Size)
+    }
+
+    .header-left {
+        width:var(--Header-PFP-Size);
+    }
+
+    .header-left, .header-right {
+        margin:0 auto;
+    }
+
+    .header-right {
+        width:65%;
+        text-align:justify;
+    }
+
+    .header-right h2 {
+        text-align:center;
+    }
+
+    section {
+        gap:2.5rem;
+    }
+}
+
+/* MOBILE NAV STARTS */
+@media(max-width: 669px){
+    :root {
+        --Nav-Font-Size:0.85rem;
+        --Skills-Column-Count:1;
+        --Screen-Frame-Size:14vw;
+    }
+
+    .header-right h2 .dash, .header-scroll { display:none }
+
+    /* .headwrap {
+        position:fixed;
+        top:0;left:0;
+        margin-left:0;
+        width:100%;
+        padding:0 var(--Screen-Frame-Size);
+        background:var(--Background)
+    } */
+
+    .menu-trigger {
+        display:block;
+    }
+
+    nav {
+        position:fixed;
+        top:0;right:0;
+        margin-top:var(--Screen-Frame-Size);
+        z-index:10;
+        background:var(--Background);
+        width:100%;
+        height:0;
+    }
+
+    nav.active {
+        /* height:calc(100vh - (var(--Screen-Frame-Size) * 2)); */
+        height:calc(100vh - var(--Screen-Frame-Size));
+    }
+
+    nav, nav.active {
+        transition:height var(--Mobile-Nav-List-Animation-Speed) ease-in-out;
+    }
+
+    nav ul {
+        height:100%;
+        flex-direction:column;
+        align-items:center;
+        justify-content:center;
+        display:none;
+        opacity:0;
+    }
+
+    nav ul.show {
+        display:flex;
+    }
+
+    nav ul.active {
+        opacity:1;
+    }
+
+    nav ul, nav ul.active {
+        transition:opacity var(--Mobile-Nav-List-Opacity-Speed) ease-in-out;
+    }
+}
+
+@media(max-width: 580px){
+    :root {
+        --Header-PFP-Size:35%;
+        --Screen-Frame-Size-Secondary:10vw;
+        --Header-Gutter-Size:2.5rem;
+        --Project-Width:calc(100vw - (var(--Screen-Frame-Size-Secondary) * 2) - 2.5vw);
+        --Project-Corner-Rounding:1rem;
+        --Project-Name-Size:calc(var(--Project-Width) * 0.069);
+        --Project-Overlay-Items-Spacing:0.9rem;
+        --Project-Eye-Size:1.9rem;
+        --H2-Size:1.1rem;
+    }
+
+    .header-bg {
+        margin-left:var(--Screen-Frame-Size-Secondary);
+        width:calc(100% - (var(--Screen-Frame-Size-Secondary) * 2));
+        height:calc(100% - var(--Screen-Frame-Size) - var(--Screen-Frame-Size-Secondary))
+    }
+
+    .headwrap {
+        padding:0 var(--Screen-Frame-Size-Secondary);
+    }
+
+    .owner {
+        margin-left:var(--Screen-Frame-Size-Secondary);
+        margin-bottom:var(--Screen-Frame-Size-Secondary);
+    }
+
+    main {
+        margin:0 var(--Screen-Frame-Size-Secondary)
+    }
+}
