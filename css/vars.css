@@ -69,7 +69,7 @@
     --Section-Inner-Gaps:2.5rem;
 
     /*------ SECTION: PROJECTS ------*/
-    --Project-Width:85vw;
+    --Project-Width:65vw;
     --Project-Height:calc(var(--Project-Width) * 9 / 16);
     --Project-Corner-Rounding:1.5rem;
     --Project-Border:#eef2f7;
